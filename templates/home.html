@@ -1,0 +1,111 @@
+{% extends "base.html" %} {% block title %}Home - RideCab{% endblock %} {% block
+content %}
+<div class="text-center py-16">
+  <h2 class="text-4xl font-bold text-purple-900 mb-4">Welcome to RideCab</h2>
+  <p class="text-lg text-gray-700">
+    Your one-stop solution for booking safe, affordable, and reliable rides.
+  </p>
+  <a
+    href="/book"
+    class="mt-8 inline-block bg-purple-900 text-white py-3 px-6 rounded-lg font-bold hover:bg-purple-800"
+    >Book a Ride Now</a
+  >
+</div>
+
+<!-- Features Section -->
+<div class="bg-gray-100 py-12">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl font-bold text-purple-900 mb-6">Why Choose RideCab?</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h4 class="text-xl font-bold text-purple-800">Compare Prices</h4>
+        <p class="text-gray-700">
+          Instantly compare ride prices from Uber and Lyft to choose the best
+          deal.
+        </p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h4 class="text-xl font-bold text-purple-800">Reliable Rides</h4>
+        <p class="text-gray-700">
+          Access a network of safe and dependable drivers at your convenience.
+        </p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h4 class="text-xl font-bold text-purple-800">Transparent Pricing</h4>
+        <p class="text-gray-700">
+          Know the price before you book – no surprises, no hidden fees.
+        </p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h4 class="text-xl font-bold text-purple-800">User-Friendly App</h4>
+        <p class="text-gray-700">
+          Book your ride easily with our intuitive and responsive platform.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Comparison Section -->
+<div class="py-12">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-purple-900 text-center mb-8">
+      Pricing Comparison
+    </h3>
+    <table class="table-auto w-full border-collapse border border-gray-300">
+      <thead>
+        <tr class="bg-purple-100 text-purple-900">
+          <th class="border border-gray-300 px-4 py-2">Ride Type</th>
+          <th class="border border-gray-300 px-4 py-2">Uber Price</th>
+          <th class="border border-gray-300 px-4 py-2">Lyft Price</th>
+          <th class="border border-gray-300 px-4 py-2">RideCab Savings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2">Economy</td>
+          <td class="border border-gray-300 px-4 py-2">$12</td>
+          <td class="border border-gray-300 px-4 py-2">$11.50</td>
+          <td class="border border-gray-300 px-4 py-2">$1.00</td>
+        </tr>
+        <tr class="bg-gray-100">
+          <td class="border border-gray-300 px-4 py-2">Premium</td>
+          <td class="border border-gray-300 px-4 py-2">$25</td>
+          <td class="border border-gray-300 px-4 py-2">$24</td>
+          <td class="border border-gray-300 px-4 py-2">$1.50</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2">Shared</td>
+          <td class="border border-gray-300 px-4 py-2">$8</td>
+          <td class="border border-gray-300 px-4 py-2">$7.50</td>
+          <td class="border border-gray-300 px-4 py-2">$0.50</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Testimonials Section -->
+<div class="bg-gray-100 py-12">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl font-bold text-purple-900 mb-6">What Our Users Say</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <p class="text-gray-700 italic">
+          "RideCab helped me save so much money and time by finding the best
+          ride option quickly!"
+        </p>
+        <h5 class="text-purple-800 mt-4 font-bold">- Sarah J.</h5>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <p class="text-gray-700 italic">
+          "I love how easy it is to compare prices and book a ride in just a few
+          clicks."
+        </p>
+        <h5 class="text-purple-800 mt-4 font-bold">- David K.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

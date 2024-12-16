@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}RideCab{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="static\styles.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXV440EHeyVDE1Niexi4EgtyXpGCX88A&libraries=places"></script>
+  </head>
+  <body class="min-h-screen">
+    <nav
+      class="bg-purple-900 p-3 flex flex-col md:flex-row justify-between items-center"
+    >
+      <div class="flex items-center gap-4 flex-wrap justify-center">
+        <!-- <h1 class="text-white text-2xl font-bold">RideCab</h1> -->
+        <img
+          src="https://www.charactercabinets.com.au/wp-content/uploads/OneCab-Logo-1-500x157.png"
+          style="height: 40px"
+        />
+        <a href="/" class="nav-link">Home</a>
+        <a href="/book" class="nav-link">Book</a>
+        <a href="/about" class="nav-link">About</a>
+      </div>
+      <div class="flex items-center gap-4 mt-2 md:mt-0">
+        <button id="themeToggle" class="text-white">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="/login" class="nav-link">Login</a>
+        <a
+          href="/signup"
+          class="bg-white text-purple-900 px-4 py-2 rounded-lg font-bold"
+          >Sign Up</a
+        >
+      </div>
+    </nav>
+
+    <main class="container mx-auto p-4">{% block content %}{% endblock %}</main>
+    <script src="static/main.js"></script>
+  </body>
+</html>

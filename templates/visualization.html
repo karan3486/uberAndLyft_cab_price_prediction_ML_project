@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block content %}
+<div class="text-center my-10">
+  <h2 class="text-3xl font-bold text-blue-400 mb-8">Metrics Report</h2>
+</div>
+
+<div class="container mx-auto grid grid-cols-1 gap-12">
+  <!-- ROC AUC Plot -->
+  <div class="bg-white p-6 shadow-lg rounded-lg mx-auto">
+    <div id="rocAUCPlot" class="w-full h-[800px]"></div>
+    <!-- Increased height -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+      var rocAUCData = {{ roc_auc_plot | safe }};
+      Plotly.react("rocAUCPlot", rocAUCData.data, rocAUCData.layout);
+    </script>
+  </div>
+
+  <!-- Confusion Matrix Plot -->
+  <div class="bg-white p-6 shadow-lg rounded-lg mx-auto">
+    <div id="confMatrixPlot" class="w-full h-[800px]"></div>
+    <!-- Increased height -->
+    <script>
+      var confMatrixData = {{ conf_matrix_plot | safe }};
+      Plotly.react("confMatrixPlot", confMatrixData.data, confMatrixData.layout);
+    </script>
+  </div>
+
+  <!-- Performance Metrics Plot -->
+  <div class="bg-white p-6 shadow-lg rounded-lg mx-auto">
+    <div id="metricsPlot" class="w-full h-[800px]"></div>
+    <!-- Increased height -->
+    <script>
+      var metricsData = {{ metrics_plot | safe }};
+      Plotly.react("metricsPlot", metricsData.data, metricsData.layout);
+    </script>
+  </div>
+</div>
+{% endblock %}
