@@ -4,6 +4,10 @@
 # Ride Price Prediction System
 
 This project is a **Flask-based web application** that predicts ride prices for Lyft and Uber based on input data such as distance, weather conditions, and time. It integrates machine learning models for price prediction and provides interactive visualizations for metric reports.
+![image](https://github.com/user-attachments/assets/d9ab910e-ebcb-4a37-a3b6-ba695c44f77d)
+
+![image](https://github.com/user-attachments/assets/24c4eff9-d067-462c-ac62-3bcb311512c3)
+
 
 ---
 
@@ -29,7 +33,7 @@ This project is a **Flask-based web application** that predicts ride prices for 
 ---
 
 ## Model:
-XGBoost Regressor
+XGBoost Regressor and 
 XGBoost Classifier
 
 ## Installation
