@@ -28,6 +28,10 @@ This project is a **Flask-based web application** that predicts ride prices for 
 
 ---
 
+## Model:
+XGBoost Regressor
+XGBoost Classifier
+
 ## Installation
 
 1. Clone the repository:
