@@ -13,6 +13,12 @@ This project is a **Flask-based web application** that predicts ride prices for 
 
 ![image](https://github.com/user-attachments/assets/cd43fbcd-12d6-4c76-8d50-f2c0a7820e31)
 
+
+## Dark Mode:
+
+![image](https://github.com/user-attachments/assets/cca89176-f2c9-4ff2-9550-56c2ccff2bba)
+
+
 ---
 
 ## Features
