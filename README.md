@@ -36,7 +36,9 @@ This project is a **Flask-based web application** that predicts ride prices for 
 XGBoost Regressor and 
 XGBoost Classifier
 
-##Prediction Pipeline:
+## Prediction Pipeline:
+
+
 ![predictgraph](https://github.com/user-attachments/assets/543ea36a-5f07-4b9c-b1ec-c026351d553e)
 
 ## Installation
