@@ -5,11 +5,13 @@
 
 This project is a **Flask-based web application** that predicts ride prices for Lyft and Uber based on input data such as distance, weather conditions, and time. It integrates machine learning models for price prediction and provides interactive visualizations for metric reports.
 
+![image](https://github.com/user-attachments/assets/fe27e45d-7a0a-4899-b232-57ff24b2784d)
 
 ![image](https://github.com/user-attachments/assets/d9ab910e-ebcb-4a37-a3b6-ba695c44f77d)
 
 ![image](https://github.com/user-attachments/assets/24c4eff9-d067-462c-ac62-3bcb311512c3)
 
+![image](https://github.com/user-attachments/assets/cd43fbcd-12d6-4c76-8d50-f2c0a7820e31)
 
 ---
 
